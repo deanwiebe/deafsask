@@ -1,0 +1,17 @@
+@import  "modules/social_media";
+@import  "modules/banner";
+@import "modules/nav";
+@import "modules/about_section";
+@import "modules/blog_section";
+@import "modules/footer";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: #dfe6ee;
+    font-size: .8em;
+}

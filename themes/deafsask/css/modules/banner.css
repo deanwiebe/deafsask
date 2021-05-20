@@ -1,0 +1,139 @@
+.banner{
+    position: relative;
+}
+.banner img{
+    object-fit: cover;
+}
+.universal-access-button{
+  position: absolute;
+  top: 0;
+  color: blue;
+  margin: 10px;
+  font-size: 5em;
+  cursor: pointer;
+  z-index: 1;
+}
+.universal-access-overlay{
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  border: 2px solid blue;
+  background-color: #dfe6ee;
+  font-size: 2em;
+  z-index: 2;
+  transform: scaleX(0);
+  transform: scaleY(0);
+}
+.contrast{
+  display: flex;
+  border-bottom: 2px solid blue;
+  border-top: 2px solid blue;
+}
+.contrast p{
+  padding: 10px;
+}
+.contrast p:hover{
+  background-color: rgba(68, 68, 68, 0.548);
+  cursor: pointer;
+}
+.reset p{
+  text-align: center;
+  cursor: pointer;
+}
+.reset p:hover{
+  background-color: rgba(68, 68, 68, 0.548);
+  text-align: center;
+}
+.contrast h3{
+  padding: 10px;
+  width: 200px;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+}
+.banner_overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner_overlay_right{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    background-color: green;
+    opacity: 0.5;
+}
+.banner_overlay_right::after{
+    content: "";
+    position: absolute;
+    background-color: green;
+    clip-path: circle(50.0% at 50%);
+    height: 100%;
+    width: 60%;
+    left: -35%;
+}
+@media screen and (max-width: 1057px) {
+    .banner_overlay_right::after {
+      width: 80%;
+      left: -50%;
+    }
+  }
+  @media screen and (max-width: 908px) {
+    .banner_overlay_right::after {
+      width: 90%;
+      left: -50%;
+    }
+  }
+
+@media screen and (max-width: 686px) {
+    .banner_overlay_right::after {
+      width: 170%;
+      left: -80%;
+    }
+    .universal-access-button{
+      font-size: 2.5em;
+    }
+    .universal-access-overlay{
+      left: 50px;
+    }
+  }
+  .banner_overlay_text{
+      font-size: 1.6em;
+      position: absolute;
+      right: 43%;
+      color: white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  @media screen and (max-width: 1058px) {
+    .banner_overlay_text {
+      right: 30%;
+    }
+    .banner_overlay_text{
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (max-width: 655px) {
+    .banner_overlay_text {
+      right: 20%;
+    }
+    .banner_overlay_text{
+      font-size: 1.4em;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    .banner_overlay_text {
+      right: 10%;
+    }
+    .banner_overlay_text{
+      font-size: 1.3em;
+    }
+  }
+  .banner_overlay_text_small{
+    align-self: end;
+  }

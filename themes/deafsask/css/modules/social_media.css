@@ -1,0 +1,21 @@
+.social_media{
+    display: flex;
+    font-size: 2.5em;
+}
+.social_media ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.social_media ul li{
+    margin: 10px;
+}
+.fa-search{
+    color: green;
+}
+.fa-envelope{
+    color: red;
+}
+.fa-facebook-square{
+    color: blue;
+}

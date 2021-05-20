@@ -1,0 +1,9 @@
+footer p{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+footer .social_media ul{
+    justify-content: flex-start;
+}
