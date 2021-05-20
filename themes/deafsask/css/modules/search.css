@@ -1,5 +1,6 @@
 .search-overlay{
     position: absolute;
+    display: none;
     top: 0;
     left: 0;
     height: 200vh;
@@ -11,9 +12,16 @@
 .search-overlay-active{
     display: unset;
 }
-.search-input{
+.search_container{
+    display: flex;
+    font-size: 2em;
+    width: 100%;
+    background-color: white;
+}
+.search-term{
     width: 100%;
     height: 50px;
     font-size: 2em;
     padding: 20px;
+    border: none;
 }
