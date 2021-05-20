@@ -1,0 +1,19 @@
+.search-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200vh;
+    width: 100%;
+    background-color: #ff634785;
+    padding: 50px;
+    text-align: center;
+}
+.search-overlay-active{
+    display: unset;
+}
+.search-input{
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    padding: 20px;
+}
