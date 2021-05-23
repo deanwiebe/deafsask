@@ -23,14 +23,14 @@
 }
 
 .blue{
-    background-color: blue;
+    background-color: #004a98;
 }
 .orange{
     background-color: orange;
 }
 .red{
     position: relative;
-    background-color: red;
+    background-color: #f15353;
     width: 400px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;

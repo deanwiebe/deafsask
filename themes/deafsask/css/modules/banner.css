@@ -7,7 +7,7 @@
 .universal-access-button{
   position: absolute;
   top: 0;
-  color: blue;
+  color: #004a98;
   margin: 10px;
   font-size: 5em;
   cursor: pointer;
@@ -17,7 +17,7 @@
   position: absolute;
   top: 20px;
   left: 100px;
-  border: 2px solid blue;
+  border: 2px solid #004a98;
   background-color: #dfe6ee;
   font-size: 2em;
   z-index: 2;
@@ -26,8 +26,8 @@
 }
 .contrast{
   display: flex;
-  border-bottom: 2px solid blue;
-  border-top: 2px solid blue;
+  border-bottom: 2px solid #004a98;
+  border-top: 2px solid #004a98;
 }
 .contrast p{
   padding: 10px;
@@ -47,8 +47,8 @@
 .contrast h3{
   padding: 10px;
   width: 200px;
-  border-left: 2px solid blue;
-  border-right: 2px solid blue;
+  border-left: 2px solid #004a98;
+  border-right: 2px solid #004a98;
 }
 .banner_overlay{
     position: absolute;
@@ -63,13 +63,13 @@
     position: relative;
     width: 55%;
     height: 100%;
-    background-color: green;
+    background-color: #2d8436;
     opacity: 0.5;
 }
 .banner_overlay_right::after{
     content: "";
     position: absolute;
-    background-color: green;
+    background-color: #2d8436;
     clip-path: circle(50.0% at 50%);
     height: 100%;
     width: 60%;

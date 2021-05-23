@@ -16,3 +16,11 @@ body{
     background-color: #dfe6ee;
     font-size: .8em;
 }
+h1, h2, h3{
+    font-family: 'Noto Sans SC', sans-serif;
+}
+p, a{
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}

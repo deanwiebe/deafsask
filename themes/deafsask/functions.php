@@ -2,7 +2,8 @@
 //Loading CSS/Styles and Javascript files
 function deaf_sask_files(){
     wp_enqueue_style('font_awsome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
-    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap');
+    wp_enqueue_style('google_fonts_headings', '//fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+    wp_enqueue_style('google_fonts', '//fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap');
 
     if(strstr($_SERVER['SERVER_NAME'], 'localhost')){
         wp_enqueue_script('main_script', 'http://localhost:3000/bundled.js', NULL, '1.0', true);

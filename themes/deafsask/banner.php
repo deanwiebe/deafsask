@@ -23,8 +23,6 @@
         <div id="banner_overlay_right" class="banner_overlay_right"></div>
         <div class="banner_overlay_text">
             <div class="banner_overlay_text_large">
-                <p>get font from robyn</p>
-                <p>get colors from robyn</p>
                 <h1>Saskatchewan</h1>
                 <h1>Deaf</h1>
                 <h1>Association</h1>
