@@ -1,8 +1,12 @@
 .banner{
     position: relative;
 }
+.banner-image{
+  display: flex;
+  justify-content: center;
+}
 .banner img{
-    object-fit: cover;
+  width: 90%;
 }
 .universal-access-button{
   position: absolute;
@@ -53,28 +57,31 @@
 .banner_overlay{
     position: absolute;
     top: 0;
-    right: 0;
-    height: 300px;
+    left: 0;
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 .banner_overlay_right{
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 51%;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
     width: 55%;
     height: 100%;
-    background-color: #2d8436;
-    opacity: 0.5;
+    background-color: #F1C142;
 }
-.banner_overlay_right::after{
+/* .banner_overlay_right::after{
     content: "";
     position: absolute;
-    background-color: #2d8436;
+    background-color: #F1C142;
     clip-path: circle(50.0% at 50%);
     height: 100%;
     width: 60%;
     left: -35%;
-}
+} */
 @media screen and (max-width: 1057px) {
     .banner_overlay_right::after {
       width: 80%;

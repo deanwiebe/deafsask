@@ -1,6 +1,8 @@
 
 <div class="banner">
-    <img alt="" src="<?php header_image(); ?>" width="100%" height="<?php echo absint( get_custom_header()->height ); ?>">
+    <div class="banner-image">
+        <img alt="" src="<?php header_image(); ?>"  height="<?php echo absint( get_custom_header()->height ); ?>">
+    </div>
     <div id="universal-access-overlay" class="universal-access-overlay">
         <div class="contrast">
             <p id="greyScaleDown"><i class="fas fa-minus"></i></p>
