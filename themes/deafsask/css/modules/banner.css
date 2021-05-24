@@ -8,26 +8,6 @@
 .banner img{
   width: 90%;
 }
-.universal-access-button{
-  position: absolute;
-  top: 0;
-  color: #004a98;
-  margin: 10px;
-  font-size: 5em;
-  cursor: pointer;
-  z-index: 1;
-}
-.universal-access-overlay{
-  position: absolute;
-  top: 20px;
-  left: 100px;
-  border: 2px solid #004a98;
-  background-color: #dfe6ee;
-  font-size: 2em;
-  z-index: 2;
-  transform: scaleX(0);
-  transform: scaleY(0);
-}
 .contrast{
   display: flex;
   border-bottom: 2px solid #004a98;
@@ -73,15 +53,6 @@
     height: 100%;
     background-color: #F1C142;
 }
-/* .banner_overlay_right::after{
-    content: "";
-    position: absolute;
-    background-color: #F1C142;
-    clip-path: circle(50.0% at 50%);
-    height: 100%;
-    width: 60%;
-    left: -35%;
-} */
 @media screen and (max-width: 1057px) {
     .banner_overlay_right::after {
       width: 80%;
@@ -107,7 +78,23 @@
       left: 50px;
     }
   }
+  .banner_overlay_right{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 1;
+  }
   .banner_overlay_text{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .banner_overlay_text_small{
+    align-self: center;
+    margin-right: 50px;
+  }
+  /* .banner_overlay_text{
       font-size: 1.6em;
       position: absolute;
       right: 43%;
@@ -143,4 +130,4 @@
   }
   .banner_overlay_text_small{
     align-self: end;
-  }
+  } */
