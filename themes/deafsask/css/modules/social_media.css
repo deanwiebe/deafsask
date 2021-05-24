@@ -12,6 +12,7 @@
 }
 .fa-search{
     color: #2d8436;
+    cursor: pointer;
 }
 .fa-envelope{
     color: #f15353;
