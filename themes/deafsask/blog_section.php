@@ -61,40 +61,16 @@
         <div class="blog_posts_title">
             <h1>Most<br>Recent<br>Update</h1>
         </div>
+        <?php
+            $mostRecentPosts = new WP_Query(array(
+                'posts_per_page' => 3,
+                'post_type' => array('event', 'news', 'resources')
+            ));
+        ?>
         <div class="recent_posts">
             <div class="single_post">
-                <?php while($home_page_events->have_posts()){
-                    $home_page_events->the_post() ?>
-                     <a href="<?php the_permalink() ?>">
-                        <div class="blog_posts_image">
-                            <img src="<?php echo the_post_thumbnail_url('blog_thumbnail') ?>" alt="" srcset="">
-                        </div>
-                        <div class="content">
-                            <h1><?php the_title() ?></h1>
-                            <p><?php echo wp_trim_words(get_the_content(), 18)?></p>
-                        </div>
-                    </a>
-                    <hr>
-            <?php } ?>
-            </div>
-            <div class="single_post">
-                <?php while($home_page_news->have_posts()){
-                    $home_page_news->the_post() ?>
-                    <a href="<?php the_permalink() ?>">
-                        <div class="blog_posts_image">
-                            <img src="<?php echo the_post_thumbnail_url('blog_thumbnail') ?>" alt="" srcset="">
-                        </div>
-                        <div class="content">
-                            <h1><?php the_title() ?></h1>
-                            <p><?php echo wp_trim_words(get_the_content(), 18)?></p>
-                        </div>
-                    </a>
-                    <hr>
-            <?php } ?>
-            </div>
-            <div class="single_post">
-                <?php while($home_page_resources->have_posts()){
-                    $home_page_resources->the_post() ?>
+                <?php while($mostRecentPosts->have_posts()){
+                    $mostRecentPosts->the_post() ?>
                      <a href="<?php the_permalink() ?>">
                         <div class="blog_posts_image">
                             <img src="<?php echo the_post_thumbnail_url('blog_thumbnail') ?>" alt="" srcset="">

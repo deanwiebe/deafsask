@@ -1,7 +1,8 @@
 <?php 
+$whoWeAre = get_page_by_title('Who We Are');
 $aboutPage = new WP_Query(array(
         'post_type' => 'page',
-        'pagename' => 'about'
+        'p' => $whoWeAre->ID
     ));
     while($aboutPage->have_posts()){
         $aboutPage->the_post(); ?>
