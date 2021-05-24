@@ -7,7 +7,6 @@ let iframe = document.getElementById('iframe')
 let state = false;
 
 aslButton.addEventListener('click', function(){
-    console.log(aslVideo)
     if(state == false){
         gsap.to(aslButton, 1, {height: '400', width: '100%'})
         gsap.to(aslVideo, 1, {height: '400', width: '100%'})
