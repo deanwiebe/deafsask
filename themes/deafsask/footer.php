@@ -9,6 +9,9 @@
                 <i id='fa-window-close' class="fa fa-window-close" aria="hidden"></i>
             </dev>
         </div>
+        <div class="search-results-container">
+            <div id="search-results" class="search-results"></div>
+        </div>
     </div>
 </footer>
 <?php wp_footer(); ?>
