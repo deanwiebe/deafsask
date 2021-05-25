@@ -1,7 +1,8 @@
 .social_media{
     display: flex;
     font-size: 2em;
-    margin: auto 60px;
+    width: 90%;
+    margin: 0 auto;
 }
 .universal-access-button{
     color: #004a98;

@@ -4,5 +4,6 @@
     get_template_part('nav');
     get_template_part('about_section');
     get_template_part('blog_section');
+    get_template_part('contact_section');
  get_footer(); 
  ?>

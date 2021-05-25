@@ -1,0 +1,106 @@
+/* .wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: 20px solid #2D8436;
+    font-size: 1.6em;
+}
+@media screen and (max-width: 1083px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .contact{
+        border-left: unset;
+        border-top: 20px solid #2D8436;
+    }
+  }
+.contact_title{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    align-self: flex-end;
+    background-color: #F1C142;
+    color: #174A93;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 450px;
+    padding: 10px;
+    font-size: 1.6em;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.asl_tab{
+    color: white;
+    cursor: pointer;
+}
+.contact-content{
+    align-self: center;
+    display: block;
+    padding: 20px;
+}
+.about-content h1{
+    color: #F1C142;
+} */
+.contactWrapper{
+    position: relative;
+}
+.contact-wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.6em;
+}
+.contact_title{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    align-self: flex-end;
+    background-color: #F1C142;
+    color: #174A93;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    width: 450px;
+    padding: 10px;
+    font-size: 1.6em;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_image{
+    border-right: 20px solid #2D8436;
+}
+@media screen and (max-width: 1083px) {
+    .contact-wrapper{
+        grid-template-columns: unset;
+    }
+    .section_image{
+        border-right: unset;
+        border-bottom: 20px solid #2D8436;
+    }
+    .contact{
+        justify-content: flex-start;
+    }
+    .contact_title{
+        bottom: 0;
+    }
+  }
+  @media screen and (max-width: 794px) {
+    .contact_title{
+        width: 150px;
+        font-size: 0.5em;
+    }
+  }

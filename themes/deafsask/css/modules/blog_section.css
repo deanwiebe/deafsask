@@ -1,5 +1,8 @@
 .blog_wrapper{
-    font-size: 2em;
+    font-size: 1.6em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .blog_title{
     text-align: center;

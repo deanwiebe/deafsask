@@ -6,14 +6,14 @@ $aboutPage = new WP_Query(array(
     ));
     while($aboutPage->have_posts()){
         $aboutPage->the_post(); ?>
+        <div id="asl_tab" class="asl_tab">
+            <p id="close">ASL</p>
+            <div id="asl-video" class="asl-video">
+            <iframe id="iframe" width="560" height="315" src="<?php  echo the_field('link')?>"></iframe>
+            </div>
+        </div>
         <div class="wrapper">
             <section class="about">
-                <div id="asl_tab" class="asl_tab">
-                    <p id="close">ASL</p>
-                    <div id="asl-video" class="asl-video">
-                    <iframe id="iframe" width="560" height="315" src="<?php  echo the_field('link')?>"></iframe>
-                    </div>
-                </div>
                 <div id="about" class="about-content">
                     <h1><?php the_title()?></h1>
                     <p><?php the_content() ?></p>

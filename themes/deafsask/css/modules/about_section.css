@@ -2,14 +2,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
 }
 .about{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-right: 20px solid orange;
-    font-size: 2em;
+    border-right: 20px solid #F1C142;
+    font-size: 1.6em;
 }
 @media screen and (max-width: 761px) {
     .wrapper{
@@ -17,7 +19,7 @@
     }
     .about{
         border-right: unset;
-        border-bottom: 20px solid orange;
+        border-bottom: 20px solid #F1C142;
     }
   }
 .asl_tab{
@@ -27,6 +29,9 @@
     width: 200px;
     text-align: right;
     padding: 10px;
+    font-size: 1.6em;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
 }
 .asl_tab{
     color: white;
@@ -45,7 +50,7 @@
     padding: 20px;
 }
 .about-content h1{
-    color: orange;
+    color: #F1C142;
 }
 .action{
     align-self: flex-end;
@@ -57,7 +62,7 @@
     margin: 10px;
 }
 .action i{
-    background-color: orange;
+    background-color: #F1C142;
     border-radius: 50%;
     padding: 10px;
     font-size: .7em;
