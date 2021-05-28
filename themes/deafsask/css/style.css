@@ -4,6 +4,7 @@
 @import "modules/about_section";
 @import "modules/blog_section";
 @import "modules/contact_section";
+@import "modules/page_about";
 @import "modules/footer";
 @import "modules/search";
 *{

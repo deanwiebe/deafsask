@@ -1,0 +1,11 @@
+.board-section{
+    font-size: 1.6em;
+    margin: 20px auto
+}
+.board-title{
+    text-align: center;
+    color: #F1C142;
+}
+.board{
+    background-color: #e5e5e559;
+}

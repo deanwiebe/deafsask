@@ -25,6 +25,16 @@
                 <?php the_post_thumbnail('about-page-thumbnail')?>
             </section>
         </div>
+        <div class="board-section">
+            <div class="board-title">
+                <h2>meet the saskatchewan board</h2>
+            </div>
+            <div class="board">
+                <div class="board-icons">
+                    
+                </div>
+            </div>
+        </div>
      <?php
     
  get_footer(); 
