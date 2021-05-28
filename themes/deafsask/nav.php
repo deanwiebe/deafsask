@@ -1,5 +1,5 @@
 <div class="nav">
-    <a href="<?php echo esc_url(site_url('/#about')) ?>"><div class="pill green">
+    <a href="<?php echo esc_url(site_url('/about')) ?>"><div class="pill green">
         <p>About</p>
         <i class="fas fa-arrow-down"></i>
     </div></a>

@@ -1,4 +1,12 @@
 <?php
+
+require get_theme_file_path('/inc/search-route.php');
+function deaf_sask_rest(){
+    register_rest_field('event', 'authorName', array(
+        'get_callback' => function(){return get_the_author();}
+    ));
+}
+add_action('rest_api_init', 'deaf_sask_rest');
 //Loading CSS/Styles and Javascript files
 function deaf_sask_files(){
     wp_enqueue_style('font_awsome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
@@ -12,6 +20,9 @@ function deaf_sask_files(){
         wp_enqueue_script('main_script', get_theme_file_uri('/bundled-assets/scripts.2ab174b04d002e79e1e6.js'), NULL, '1.0', true);
         wp_enqueue_style('main_style', get_theme_file_uri('/bundled-assets/styles.2ab174b04d002e79e1e6.css'));
     }
+    wp_localize_script('main_script','deafsaskData',array(
+        'root_url' => get_site_url()
+    ));
 }
 
 add_action('wp_enqueue_scripts', 'deaf_sask_files');
