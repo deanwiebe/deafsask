@@ -1,6 +1,7 @@
 .board-section{
     font-size: 1.6em;
-    margin: 20px auto
+    margin: 20px auto;
+    width: 90%;
 }
 .board-title{
     text-align: center;
@@ -8,4 +9,27 @@
 }
 .board{
     background-color: #e5e5e559;
+}
+.board-row{
+    display: flex;
+    justify-content: center;
+}
+.member{
+    margin: 40px;
+    text-align: center;
+}
+.member-image img{
+    border-radius: 90px;
+}
+.title-green{
+    color: #2D8436;
+}
+.title-red{
+    color: #E05E59;
+}
+.title-blue{
+    color: #174A93;
+}
+.title-orange{
+    color: #F1C142;
 }

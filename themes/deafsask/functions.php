@@ -42,5 +42,6 @@ function deafsask_custom_header_setup() {
     add_theme_support( 'post-thumbnails' );
     add_image_size('about-page-thumbnail', 700, 500, true);
     add_image_size('blog_thumbnail', 400, 300, true);
+    add_image_size('board-member', 200, 300, true);
 }
 add_action( 'after_setup_theme', 'deafsask_custom_header_setup' );

@@ -58,5 +58,30 @@ function register_post_types(){
         ),
         'menu_icon' => 'dashicons-shield'
     ));
+    register_post_type('board', array(
+        'show_in_rest' => true,
+        'public' => true,
+        'rewrite' => array('slug' => 'board'),
+        'has_archive' => true,
+        'supports' => array( 
+            'title',
+            'thumbnail',
+            'custom-fields'
+        ),
+        'labels' => array(
+            'name' => 'board',
+            'add_new_item' => 'Add New Board Member',
+            'edit_item' => 'Edit Board Member',
+            'all_items' => 'All Board',
+            'singular_name' => 'Board'
+        ),
+        'menu_icon' => 'dashicons-businesswoman'
+    ));
+    register_post_type('post', array(
+        'public' => false
+    ));
+    register_post_type('comments', array(
+        'public' => false
+    ));
 }
 add_action('init', 'register_post_types');

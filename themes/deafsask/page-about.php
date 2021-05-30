@@ -31,7 +31,122 @@
             </div>
             <div class="board">
                 <div class="board-icons">
-                    
+                    <div class="board-row">
+                        <?php
+                            $board = new WP_Query(array(
+                                'posts_per_page' => 10,
+                                'post_type' => 'board',
+                                'orderby' => 'date',
+                                'order' => 'ASC',
+                                'meta_key' => 'row',
+                                'meta_value' => 1
+                            ));
+                            $count = 0;
+                            while($board->have_posts()){
+                                $board->the_post(); ?>
+                                <div class="member">
+                                    <div class="member-image">
+                                        <?php the_post_thumbnail('board-member') ?>
+                                    </div>
+                                    <div class="member-title title-green">
+                                        <p><?php echo the_field('title') ?></p>
+                                    </div>
+                                    <div class="member-name">
+                                        <p><?php the_field('name') ?></p>
+                                    </div>
+                                </div>
+                        <?php }
+                        wp_reset_query()
+                        ?>
+                    </div>
+
+                    <div class="board-row">
+                        <?php
+                            $board = new WP_Query(array(
+                                'posts_per_page' => 10,
+                                'post_type' => 'board',
+                                'orderby' => 'date',
+                                'order' => 'ASC',
+                                'meta_key' => 'row',
+                                'meta_value' => 2
+                            ));
+                            $count = 0;
+                            while($board->have_posts()){
+                                $board->the_post(); ?>
+                                <div class="member">
+                                    <div class="member-image">
+                                        <?php the_post_thumbnail('board-member') ?>
+                                    </div>
+                                    <div class="member-title title-red">
+                                        <p><?php echo the_field('title') ?></p>
+                                    </div>
+                                    <div class="member-name">
+                                        <p><?php the_field('name') ?></p>
+                                    </div>
+                                </div>
+                        <?php }
+                        wp_reset_query()
+                        ?>
+                    </div>
+
+                    <div class="board-row">
+                        <?php
+                            $board = new WP_Query(array(
+                                'posts_per_page' => 10,
+                                'post_type' => 'board',
+                                'orderby' => 'date',
+                                'order' => 'ASC',
+                                'meta_key' => 'row',
+                                'meta_value' => 3
+                            ));
+                            $count = 0;
+                            while($board->have_posts()){
+                                $board->the_post(); ?>
+                                <div class="member">
+                                    <div class="member-image">
+                                        <?php the_post_thumbnail('board-member') ?>
+                                    </div>
+                                    <div class="member-title title-blue">
+                                        <p><?php echo the_field('title') ?></p>
+                                    </div>
+                                    <div class="member-name">
+                                        <p><?php the_field('name') ?></p>
+                                    </div>
+                                </div>
+                        <?php }
+                        wp_reset_query()
+                        ?>
+                    </div>
+
+                    <div class="board-row">
+                        <?php
+                            $board = new WP_Query(array(
+                                'posts_per_page' => 10,
+                                'post_type' => 'board',
+                                'orderby' => 'date',
+                                'order' => 'ASC',
+                                'meta_key' => 'row',
+                                'meta_value' => 4
+                            ));
+                            $count = 0;
+                            while($board->have_posts()){
+                                $board->the_post(); ?>
+                                <div class="member">
+                                    <div class="member-image">
+                                        <?php the_post_thumbnail('board-member') ?>
+                                    </div>
+                                    <div class="member-title title-orange">
+                                        <p><?php echo the_field('title') ?></p>
+                                    </div>
+                                    <div class="member-name">
+                                        <p><?php the_field('name') ?></p>
+                                    </div>
+                                </div>
+                        <?php }
+                        wp_reset_query()
+                        ?>
+                    </div>
+
                 </div>
             </div>
         </div>
