@@ -19,3 +19,29 @@
     transform: scaleY(0);
     z-index: 1;
   }
+  .contrast{
+    display: flex;
+    border-bottom: 2px solid #004a98;
+    border-top: 2px solid #004a98;
+  }
+  .contrast p{
+    padding: 10px;
+  }
+  .contrast p:hover{
+    background-color: rgba(68, 68, 68, 0.548);
+    cursor: pointer;
+  }
+  .reset p{
+    text-align: center;
+    cursor: pointer;
+  }
+  .reset p:hover{
+    background-color: rgba(68, 68, 68, 0.548);
+    text-align: center;
+  }
+  .contrast h3{
+    padding: 10px;
+    width: 200px;
+    border-left: 2px solid #004a98;
+    border-right: 2px solid #004a98;
+  }

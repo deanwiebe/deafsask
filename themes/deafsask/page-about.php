@@ -1,8 +1,8 @@
 <?php get_header(); 
     echo('hello from page-about.php');
-    get_template_part('social_media');
-    get_template_part('banner');
-    get_template_part('nav');
+    get_template_part('./template-parts/social_media');
+    get_template_part('./template-parts/banner');
+    get_template_part('./template-parts/nav');
      ?>
         <div id="asl_tab" class="asl_tab">
             <p id="close">ASL</p>
