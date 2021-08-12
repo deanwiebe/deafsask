@@ -10,29 +10,32 @@
     font-size: 1.6em;
 }
 .nav p{
-    margin: 20px;
+    margin-left: 20px;
 }
 .pill {
-    width: 250px;
-    height: 30px;
-    margin-left: 10px;
+    /* width: 250px; */
+    /* height: 30px; */
+    /* margin-left: 10px; */
     border-radius: 30px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .blue{
-    background-color: #004a98;
+    color: #004a98;
 }
 .green{
-    background-color: #2D8436;
+    color: #2D8436;
 }
 .red{
+    color: #f15353;
+}
+.red-pill{
     position: relative;
     background-color: #f15353;
-    width: 400px;
+    width: 300px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }

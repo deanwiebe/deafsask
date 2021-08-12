@@ -1,7 +1,13 @@
+.access{
+    position: absolute;
+    top: 20px;
+    left: 75px;
+}
 .universal-access-button{
     color: #004a98;
     margin: 10px;
     cursor: pointer;
+    font-size: 50px;
   }
   .universal-access-overlay{
     position: absolute;

@@ -1,4 +1,4 @@
-<div id="access">
+<div class="access">
     <div id="universal-access-button" class="universal-access-button">
             <i class="fas fa-universal-access"></i>
     </div>
