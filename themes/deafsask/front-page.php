@@ -1,7 +1,8 @@
 <?php get_header(); 
-    get_template_part('social_media');
-    get_template_part('banner');
-    get_template_part('nav');
+    get_template_part('./template-parts/social_media');
+    get_template_part('./template-parts/access-button');
+    get_template_part('./template-parts/nav');
+    get_template_part('./template-parts/banner');
     ?>
         <div id="asl_tab" class="asl_tab">
             <p id="close">ASL</p>

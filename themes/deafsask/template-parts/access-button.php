@@ -1,4 +1,4 @@
-<div class="social_media">
+<div id="access">
     <div id="universal-access-button" class="universal-access-button">
             <i class="fas fa-universal-access"></i>
     </div>
@@ -17,10 +17,4 @@
             <p>Reset</p>
         </div>
     </div>
-    <ul>
-        <li><a href="<?php echo esc_url(site_url('/')) ?>"><i class="fas fa-home"></i></a></li>
-        <li id="fa-search"><i class="fas fa-search"></i></li>
-        <li><i class="fas fa-envelope"></i></li>
-        <li><i class="fab fa-facebook-square"></i></li>
-    </ul>
 </div>
