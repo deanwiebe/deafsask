@@ -693,8 +693,10 @@
 									<input id="expiration_number" name="expiration_number[]" type="text" size="10" value="<?php echo str_replace("\"", "&quot;", stripslashes($level->expiration_number))?>" />
 									<select id="expiration_period" name="expiration_period[]">
 									  <?php
-										$cycles = array( __('Day(s)', 'paid-memberships-pro' ) => 'Day', __('Week(s)', 'paid-memberships-pro' ) => 'Week', __('Month(s)', 'paid-memberships-pro' ) => 'Month', __('Year(s)', 'paid-memberships-pro' ) => 'Year' );
+
+										$cycles = array( __('Hour(s)', 'paid-memberships-pro' ) => 'Hour', __('Day(s)', 'paid-memberships-pro' ) => 'Day', __('Week(s)', 'paid-memberships-pro' ) => 'Week', __('Month(s)', 'paid-memberships-pro' ) => 'Month', __('Year(s)', 'paid-memberships-pro' ) => 'Year' );
 										foreach ( $cycles as $name => $value ) {
+
 										  echo "<option value='$value'";
 										  if ( $level->expiration_period == $value ) echo " selected='selected'";
 										  echo ">$name</option>";
@@ -802,7 +804,7 @@
 						<tr<?php if ( ! pmpro_check_discount_code_for_gateway_compatibility( $code->id ) ) { ?> class="pmpro_error"<?php } ?>>
 							<td><?php echo $code->id?></td>
 							<td class="has-row-actions">
-								<a title="<?php echo sprintf( 'Edit Code: %s', $code->code ); ?>" href="<?php echo add_query_arg( array( 'page' => 'pmpro-discountcodes', 'edit' => $code->id ), admin_url('admin.php' ) ); ?>"><?php echo $code->code?></a>
+								<a title="<?php echo sprintf( __( 'Edit Code: %s', 'paid-memberships-pro' ), $code->code ); ?>" href="<?php echo add_query_arg( array( 'page' => 'pmpro-discountcodes', 'edit' => $code->id ), admin_url('admin.php' ) ); ?>"><?php echo $code->code?></a>
 								<div class="row-actions">
 									<span class="edit">
 										<a title="<?php _e( 'Edit', 'paid-memberships-pro' ); ?>" href="<?php echo add_query_arg( array( 'page' => 'pmpro-discountcodes', 'edit' => $code->id ), admin_url('admin.php' ) ); ?>"><?php _e( 'Edit', 'paid-memberships-pro' ); ?></a>

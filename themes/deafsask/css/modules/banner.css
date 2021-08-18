@@ -1,6 +1,17 @@
 .banner{
     position: relative;
     height: 300px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+.banner::after{
+  content: '';
+  background-color: #F1C142;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 0.5;
 }
 .banner img{
   width: 100%;
@@ -34,10 +45,63 @@
 }
 .banner_overlay_text{
   margin-left: 20px;
+  width: 25%;
 }
 .banner_pill_images{
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+}
+.image_one img{
+  border-bottom-left-radius: 225px;
+  border-bottom-right-radius: 225px;
+}
+.image_two{
+  align-self: center;
+}
+.image_two img{
+  border-radius: 225px;
+}
+.image_three{
+  align-self: end;
+}
+.image_three img{
+  border-top-left-radius: 225px;
+  border-top-right-radius: 225px;
+  object-fit: cover;
+  position: relative;
+  bottom: -5px;
+}
+/* About page styles */
+.page-id-17 .banner::after {
+  background-color: #174A93;
+}
+.page-id-17 .banner_overlay {
+  background-color: #174A93;
+}
+.page-id-17 .banner_under_overlay {
+  background-color: #174A93;
+}
+
+/* Membership page styles */
+.page-id-55 .banner::after {
+  background-color: #2D8436;
+}
+.page-id-55 .banner_overlay {
+  background-color: #2D8436;
+}
+.page-id-55 .banner_under_overlay {
+  background-color: #2D8436;
+}
+/* donate page styles */
+.page-id-57 .banner::after {
+  background-color: #E05E59;
+}
+.page-id-57 .banner_overlay {
+  background-color: #E05E59;
+}
+.page-id-57 .banner_under_overlay {
+  background-color: #E05E59;
 }
  

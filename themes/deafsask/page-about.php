@@ -1,8 +1,8 @@
-<?php get_header(); 
-    echo('hello from page-about.php');
+<?php get_header();
     get_template_part('./template-parts/social_media');
-    get_template_part('./template-parts/banner');
+    get_template_part('./template-parts/access-button');
     get_template_part('./template-parts/nav');
+    get_template_part('./template-parts/banner');
      ?>
         <div id="asl_tab" class="asl_tab">
             <p id="close">ASL</p>
@@ -13,13 +13,13 @@
         <div class="wrapper">
             <section class="about">
                 <div id="about" class="about-content">
-                    <h1><?php the_title()?></h1>
+                    <h1><?php the_title()?> SDA</h1>
                     <p><?php the_content() ?></p>
                 </div>
-                <div class="action">
+                <!-- <div class="action">
                     <a href="<?php the_permalink() ?>">Learn More</a>
                     <a href="<?php the_permalink() ?>"><i class="fas fa-arrow-right"></i></a>
-                </div>
+                </div> -->
             </section>
             <section class="section_image">
                 <?php the_post_thumbnail('about-page-thumbnail')?>
@@ -147,6 +147,9 @@
                         ?>
                     </div>
 
+                </div>
+                <div class="board-closer">
+                    <h2>Thank you for Volunteering<br> your time with us</h2>
                 </div>
             </div>
         </div>

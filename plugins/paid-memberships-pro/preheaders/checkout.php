@@ -552,13 +552,22 @@ if ( ! empty( $pmpro_confirmed ) ) {
 			//make the user a subscriber
 			$wpuser->set_role( get_option( 'default_role', 'subscriber' ) );
 
+			/**
+			 * Allow hooking before the user authentication process when setting up new user.
+			 *
+			 * @since 2.5.10
+			 *
+			 * @param int $user_id The user ID that is being setting up.
+			 */
+			do_action( 'pmpro_checkout_before_user_auth', $user_id );
+
+
 			//okay, log them in to WP
 			$creds                  = array();
 			$creds['user_login']    = $new_user_array['user_login'];
 			$creds['user_password'] = $new_user_array['user_pass'];
 			$creds['remember']      = true;
 			$user                   = wp_signon( $creds, false );
-
 			//setting some cookies
 			wp_set_current_user( $user_id, $username );
 			wp_set_auth_cookie( $user_id, true, apply_filters( 'pmpro_checkout_signon_secure', force_ssl_admin() ) );
@@ -586,7 +595,11 @@ if ( ! empty( $pmpro_confirmed ) ) {
 
 		//calculate the end date
 		if ( ! empty( $pmpro_level->expiration_number ) ) {
-			$enddate =  date( "Y-m-d H:i:s", strtotime( "+ " . $pmpro_level->expiration_number . " " . $pmpro_level->expiration_period, current_time( "timestamp" ) ) );
+			if( $pmpro_level->cycle_period == 'Hour' ){
+				$enddate =  date( "Y-m-d H:i:s", strtotime( "+ " . $pmpro_level->expiration_number . " " . $pmpro_level->expiration_period, current_time( "timestamp" ) ) );
+			} else {
+				$enddate =  date( "Y-m-d 23:59:59", strtotime( "+ " . $pmpro_level->expiration_number . " " . $pmpro_level->expiration_period, current_time( "timestamp" ) ) );
+			}
 		} else {
 			$enddate = "NULL";
 		}
@@ -731,6 +744,10 @@ if ( ! empty( $pmpro_confirmed ) ) {
 				if ( empty( $old_lastname ) ) {
 					update_user_meta( $user_id, "last_name", $blastname );
 				}
+			}
+
+			if( $pmpro_level->expiration_period == 'Hour' ){
+				update_user_meta( $user_id, 'pmpro_disable_notifications', true );
 			}
 
 			//show the confirmation

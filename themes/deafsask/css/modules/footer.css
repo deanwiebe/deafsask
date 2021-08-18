@@ -1,9 +1,67 @@
+
+.footer-wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #174A93;
+    position: relative;
+    padding: 20px;
+}
+.informed{
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    color: #E05E59;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 40%;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.6em;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.section{
+    margin-top: 75px;
+    color: #fff;
+}
+#wpforms-133-field_1{
+    background-color: #174A93;
+    border: none;
+    color: #fff;
+    border-bottom: solid;
+}
+#wpforms-submit-133{
+    background-color: #174A93;
+    color: #fff;
+    border-radius: 25px;
+}
+#wpforms-submit-133:hover{
+    background-color: #FFF;
+    color: black;
+    border-radius: 25px;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu h2{
+    align-self: center;
+}
+.menu-footer-container ul{
+  columns: 2; 
+}
+.menu-footer-container li a{
+    color: white;
+}
+.menu-footer-container li{
+    padding: 10px;
+}
+.footer_social ul li i{
+    color: #fff;
+}
+
 footer .dean p{
     background-color: black;
     text-align: center;
     color: white;
-    font-size: 2em;
-}
-footer .social_media ul{
-    justify-content: flex-start;
 }

@@ -45,3 +45,8 @@ function deafsask_custom_header_setup() {
     add_image_size('board-member', 200, 300, true);
 }
 add_action( 'after_setup_theme', 'deafsask_custom_header_setup' );
+
+function register_my_nav_menus() {
+    register_nav_menu('footer-menu',__( 'Footer Menu' ));
+  }
+  add_action( 'init', 'register_my_nav_menus' );
